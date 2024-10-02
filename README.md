@@ -1,5 +1,9 @@
 # Posts page project
 
+<h1>
+     <img align="center" src="https://github.com/AlexandreBarrosDev/Portfolio/blob/main/imagens/logoalx.svg">
+</h1>
+
 ## Página de Posts Fake com React e CSS
 
 Este projeto é uma página web que exibe posts falsos gerados a partir da API JSONPlaceholder. A interface foi construída com React para a estrutura da aplicação e CSS para a estilização.
