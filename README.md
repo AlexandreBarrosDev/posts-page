@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Posts page project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Página de Posts Fake com React e CSS
 
-## Available Scripts
+Este projeto é uma página web que exibe posts falsos gerados a partir da API JSONPlaceholder. A interface foi construída com React para a estrutura da aplicação e CSS para a estilização.
 
-In the project directory, you can run:
+### Funcionalidades:
 
-### `npm start`
+* Exibição de posts: A página exibe uma lista de posts falsos, cada um com título, imagem e corpo de texto.
+* Imagens geradas: As imagens dos posts são geradas aleatoriamente a partir da API Placeholder.
+* Filtro por nome: Um campo de busca permite filtrar os posts pelo título.
+* Paginação: Um botão "Carregar mais posts" permite carregar mais posts por página, melhorando a performance e a experiência do usuário.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tecnologias utilizadas:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* React: Biblioteca JavaScript para construção de interfaces de usuário.
+* CSS: Linguagem de estilo para a aparência da página.
+* API JSONPlaceholder: API pública que fornece dados falsos para fins de teste e desenvolvimento.
 
-### `npm test`
+### Como executar o projeto:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone o repositório: git clone <URL do repositório>
+2. Instale as dependências: npm install
+3. Inicie o servidor de desenvolvimento: npm start
 
-### `npm run build`
+### Componentes principais:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* App.js: Componente principal que gerencia o estado da aplicação e renderiza os outros componentes.
+* Posts.js: Componente responsável por exibir a lista de posts.
+* PostCard.js: Componente que representa um único post.
+* TextInput.js: Componente que implementa o campo de busca para filtrar os posts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Observações:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Este projeto foi desenvolvido com foco na demonstração de habilidades em React e CSS, utilizando uma API pública para facilitar o acesso aos dados.
+A estilização da página é básica e pode ser melhorada de acordo com as preferências do usuário.
+O número de posts por página e outras configurações podem ser ajustadas no código-fonte.
 
-### `npm run eject`
+#### Author
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Alexandre Barros*
