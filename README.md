@@ -1,8 +1,8 @@
 # Posts page project
 
-<h1>
+<h3>
      <img align="center" src="https://github.com/AlexandreBarrosDev/Portfolio/blob/main/imagens/logoalx.svg">
-</h1>
+</h3>
 
 ## Página de Posts Fake com React e CSS
 
