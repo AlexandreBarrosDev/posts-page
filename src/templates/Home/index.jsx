@@ -6,6 +6,7 @@ import { loadPosts } from '../../utils/loadPosts'
 import { Posts } from '../../components/Posts';
 import { Button } from '../../components/Button';
 import { TextInput } from '../../components/TextInput';
+import { Header } from '../../components/Header';
 
 
 export const Home = () => {
@@ -52,46 +53,40 @@ export const Home = () => {
       }
 
   return (
-    <section className='container'>
-      <div className='search-container'>
-        {!!searchValue && (
-          <>
-            <h1>Search Value: {searchValue}</h1>
-          </>
-        )}
-        <TextInput 
-          searchValue={searchValue} 
-          handleChange={handleChange}
-        />
-      </div>
+    <>
+      <Header />
+      <section className='container'>
+        <div className='search-container'>
+          {!!searchValue && (
+            <>
+              <h1>Search Value: {searchValue}</h1>
+            </>
+          )}
+          <TextInput 
+            searchValue={searchValue} 
+            handleChange={handleChange}
+          />
+        </div>
 
 
-        {filteredPosts.length > 0 && (
-          <Posts posts = {filteredPosts} />
-        )}
+          {filteredPosts.length > 0 && (
+            <Posts posts = {filteredPosts} />
+          )}
 
-        {filteredPosts.length === 0 && (
-          <p>Não existem posts</p>
+          {filteredPosts.length === 0 && (
+            <p>Não existem posts</p>
+          )}
+        <div className="button-container">
+        {!searchValue && (
+          <Button 
+            text = "Load more posts"
+            onClick = {loadMorePosts}
+            disabled = {noMorePosts}
+          />
         )}
-      <div className="button-container">
-      {!searchValue && (
-        <Button 
-          text = "Load more posts"
-          onClick = {loadMorePosts}
-          disabled = {noMorePosts}
-        />
-      )}
-      </div>
-      
-    </section>
-    
+        </div>
+        
+      </section>
+    </>
   );
 }
-//export class Home2 extends Component {
-
-  
-
-  //async componentDidMount() {
-   // await this.loadPosts();
-  //}
-//}

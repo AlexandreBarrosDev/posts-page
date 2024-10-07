@@ -2,4 +2,7 @@
     width: 100%;
     font-size: 20px;
     padding: 10px;
+    background: #111;
+    color: #fff;
+    border: solid 2px #e6e600;
 }
